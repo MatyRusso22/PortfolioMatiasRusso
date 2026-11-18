@@ -36,16 +36,26 @@ const DATA_ES = {
   ],
   projects: [                                              // EDITAR
     {
-      slug: "proyecto-ejemplo",
-      title: "Proyecto de ejemplo",
-      desc: "Descripción corta de qué hace y qué problema resuelve.",
-      tags: ["Python", "Automatización"],
-      url: "https://github.com/tu-usuario/proyecto",
+      slug: "fondo-blanco",
+      title: "Fondo Blanco",
+      desc: "Red social para gente amante de la cocteleria.",
+      tags: ["C#", "HTML", "Typescript", "CSS"],
+      url: "https://github.com/GabScarafia/FoB",
       body: [
-        "Contá el contexto, las decisiones técnicas y el resultado.",
-        "Podés usar varios párrafos. El HTML simple está permitido.",
+        "Se trata de mi proyecto final de carrera.",
+        "Con mi equipo, creamos una red social para que la gente pueda compartir sus recetas de tragos favoritas, conectar con otras personas, likear sus recetas, participar de desafios...",
       ],
     },
+    {
+      slug: "proyecto-pentest",
+      title: "Pentest a UTN FRLP",
+      desc: "Investigacion de vulnerabilidades en las paginas de mi universidad.",
+      tags: ["Ciberseguridad Ofensiva", "OWASP", "Hacking Etico" ],
+      body: [
+        "Este es mi practica supervisada.",
+        "Como investigador en ciberseguridad, representando al laboratorio GIC, lideré un proyecto de pentest para mi universidad."
+      ]
+    }
   ],
   writeups: [                                              // EDITAR
     {
@@ -64,16 +74,7 @@ const DATA_ES = {
       ],
     },
   ],
-  notes: [                                                 // EDITAR
-    {
-      slug: "nota-ejemplo",
-      title: "Nota de estudio de ejemplo",
-      desc: "Apuntes sobre un tema (por ejemplo, una categoría de OWASP ASVS).",
-      tags: ["ASVS", "Apuntes"],
-      date: "2026-01-01",
-      body: ["<p>Contenido de la nota.</p>"],
-    },
-  ],
+
   timeline: [
     { k: "Ago 2026 – hoy", v: "Docente auxiliar de Ciberseguridad (UTN FRLP): formación en fundamentos y prácticas, y desarrollo de contenidos y actividades prácticas." },
     { k: "Mar 2026 – hoy", v: "Investigador en GIC UTN FRLP: pruebas de penetración, análisis de vulnerabilidades y malware; soporte técnico e infraestructura." },
@@ -115,19 +116,31 @@ const DATA_EN = {
     { k: "Development", v: ["C#", ".NET Blazor", "JavaScript", "Python", "Playwright", "REST APIs", "Git"] },
     { k: "Infrastructure", v: ["MikroTik/Cisco networking", "Firewalls", "Hardening", "SQL/NoSQL databases"] },
   ],
-  projects: [                                              // EDITAR
+  
+  projects: [
     {
-      slug: "proyecto-ejemplo",
-      title: "Example project",
-      desc: "Short description of what it does and what problem it solves.",
-      tags: ["Python", "Automation"],
-      url: "https://github.com/tu-usuario/proyecto",
+      slug: "fondo-blanco",
+      title: "Fondo Blanco",
+      desc: "Social network for cocktail enthusiasts.",
+      tags: ["C#", "HTML", "TypeScript", "CSS"],
+      url: "https://github.com/GabScarafia/FoB",
       body: [
-        "Describe the context, the technical decisions and the outcome.",
-        "You can use several paragraphs. Simple HTML is allowed.",
+        "This is my university final-year project.",
+        "Together with my team, we developed a social network where users can share their favorite cocktail recipes, connect with other people, like recipes, and participate in challenges..."
       ],
     },
+    {
+      slug: "proyecto-pentest",
+      title: "Pentest at UTN FRLP",
+      desc: "Vulnerability research on my university's websites.",
+      tags: ["Offensive Security", "OWASP", "Ethical Hacking"],
+      body: [
+        "This project is part of my supervised professional practice.",
+        "As a cybersecurity researcher representing the GIC laboratory, I led a penetration testing project targeting my university's web applications."
+      ]
+    }
   ],
+
   writeups: [                                              // EDITAR
     {
       slug: "maquina-ejemplo",
@@ -145,16 +158,7 @@ const DATA_EN = {
       ],
     },
   ],
-  notes: [                                                 // EDITAR
-    {
-      slug: "nota-ejemplo",
-      title: "Example study note",
-      desc: "Notes on a topic (for example, an OWASP ASVS category).",
-      tags: ["ASVS", "Notes"],
-      date: "2026-01-01",
-      body: ["<p>Note content.</p>"],
-    },
-  ],
+
   timeline: [
     { k: "Aug 2026 – present", v: "Teaching assistant in Cybersecurity (UTN FRLP): training in fundamentals and hands-on practice, and development of content and practical activities." },
     { k: "Mar 2026 – present", v: "Researcher at GIC UTN FRLP: penetration testing, vulnerability and malware analysis; technical support and infrastructure." },
@@ -189,7 +193,7 @@ const STR = {
       made: "Hecho a mano con HTML, CSS y JS", switchTo: "Cambiar a inglés",
       metaDesc: "Portfolio de Matías Russo: ciberseguridad, pentesting web, desarrollo fullstack e infraestructura de redes.",
     },
-    nav: { inicio: "Inicio", proyectos: "Proyectos", writeups: "Writeups", notas: "Notas", "sobre-mi": "Sobre mí", cv: "CV", contacto: "Contacto" },
+    nav: { inicio: "Inicio", proyectos: "Proyectos", writeups: "Writeups", "sobre-mi": "Sobre mí", cv: "CV", contacto: "Contacto" },
     diff: { easy: "Fácil", medium: "Media", hard: "Difícil" },
     kind: { page: "página", project: "proyecto", writeup: "writeup", note: "nota" },
     noResults: "Sin resultados",
@@ -200,7 +204,6 @@ const STR = {
     },
     projects: { eyebrow: "Proyectos", h1: "Lo que construí", lead: "Herramientas, automatizaciones y desarrollos propios." },
     writeups: { eyebrow: "Writeups", h1: "Máquinas y laboratorios", lead: "Resoluciones documentadas: reconocimiento, explotación, escalada y cómo se mitiga.", all: "Todos" },
-    notes: { eyebrow: "Notas", h1: "Apuntes de estudio", lead: "Resúmenes y checklists que armo mientras aprendo." },
     about: { eyebrow: "Sobre mí", stack: "Stack", career: "Trayectoria" },
     cv: {
       eyebrow: "Currículum", dlEs: "⬇ CV en español (PDF)", dlEn: "⬇ CV in English (PDF)",
@@ -223,7 +226,7 @@ const STR = {
       made: "Handcrafted with HTML, CSS and JS", switchTo: "Switch to Spanish",
       metaDesc: "Matías Russo's portfolio: cybersecurity, web pentesting, fullstack development and network infrastructure.",
     },
-    nav: { inicio: "Home", proyectos: "Projects", writeups: "Writeups", notas: "Notes", "sobre-mi": "About", cv: "Résumé", contacto: "Contact" },
+    nav: { inicio: "Home", proyectos: "Projects", writeups: "Writeups", "sobre-mi": "About", cv: "Résumé", contacto: "Contact" },
     diff: { easy: "Easy", medium: "Medium", hard: "Hard" },
     kind: { page: "page", project: "project", writeup: "writeup", note: "note" },
     noResults: "No results",
@@ -234,7 +237,6 @@ const STR = {
     },
     projects: { eyebrow: "Projects", h1: "What I've built", lead: "Tools, automations and personal developments." },
     writeups: { eyebrow: "Writeups", h1: "Machines and labs", lead: "Documented solutions: reconnaissance, exploitation, escalation and how it's mitigated.", all: "All" },
-    notes: { eyebrow: "Notes", h1: "Study notes", lead: "Summaries and checklists I put together as I learn." },
     about: { eyebrow: "About me", stack: "Stack", career: "Experience" },
     cv: {
       eyebrow: "Résumé", dlEs: "⬇ CV in Spanish (PDF)", dlEn: "⬇ CV in English (PDF)",
@@ -267,7 +269,7 @@ let DATA = DATA_BY_LANG[lang];
 // t("home.hi") -> texto en el idioma actual
 const t = (key) => key.split(".").reduce((o, p) => (o == null ? o : o[p]), STR[lang]) ?? key;
 
-const PAGE_PATHS = ["inicio", "proyectos", "writeups", "notas", "sobre-mi", "cv", "contacto"];
+const PAGE_PATHS = ["inicio", "proyectos", "writeups", "sobre-mi", "cv", "contacto"];
 
 const tags = (arr = []) => `<div class="tags">${arr.map((x) => `<span class="tag">${esc(x)}</span>`).join("")}</div>`;
 
@@ -296,10 +298,10 @@ ${DATA.skills.map((s) => `${s.k}: ${s.v.join(", ")}`).map(esc).join("\n")}
         </div>
       </section>
       <div class="stats">${DATA.stats.map((s) => `<div class="stat"><b>${esc(s.n)}</b><span>${esc(s.l)}</span></div>`).join("")}</div>
-      <h2>${esc(t("home.latest"))}</h2>
-      <div class="grid">${latest.map(writeupCard).join("") || `<p>${esc(t("home.none"))}</p>`}</div>
       <h2>${esc(t("home.featured"))}</h2>
-      <div class="grid">${DATA.projects.slice(0, 3).map(projectCard).join("")}</div>`;
+      <div class="grid">${DATA.projects.slice(0, 3).map(projectCard).join("")}</div>
+      <h2>${esc(t("home.latest"))}</h2>
+      <div class="grid">${latest.map(writeupCard).join("") || `<p>${esc(t("home.none"))}</p>`}</div>`;
   },
 
   proyectos() {
@@ -319,13 +321,6 @@ ${DATA.skills.map((s) => `${s.k}: ${s.v.join(", ")}`).map(esc).join("\n")}
         ${all.map((x) => `<button class="chip" data-f="${esc(x)}">${esc(x)}</button>`).join("")}
       </div>
       <div class="grid" id="wgrid">${DATA.writeups.map(writeupCard).join("")}</div>`;
-  },
-
-  notas() {
-    return `
-      <div class="eyebrow">${esc(t("notes.eyebrow"))}</div><h1>${esc(t("notes.h1"))}</h1>
-      <p class="lead">${esc(t("notes.lead"))}</p>
-      <div class="grid">${DATA.notes.map(noteCard).join("")}</div>`;
   },
 
   "sobre-mi"() {
@@ -385,10 +380,6 @@ function writeupCard(w) {
     <div class="meta"><span>${esc(w.platform)}</span><span class="badge ${esc(w.difficulty)}">${esc(t("diff." + w.difficulty) === "diff." + w.difficulty ? w.difficulty : t("diff." + w.difficulty))}</span></div>
     <h3>${esc(w.title)}</h3><p>${esc(w.desc)}</p>${tags(w.tags)}</a>`;
 }
-function noteCard(n) {
-  return `<a class="card" href="#/notas/${esc(n.slug)}">
-    <div class="meta"><span>${esc(n.date)}</span></div><h3>${esc(n.title)}</h3><p>${esc(n.desc)}</p>${tags(n.tags)}</a>`;
-}
 
 /* ---------- Detalle ---------- */
 function detail(section, item) {
@@ -401,7 +392,7 @@ function detail(section, item) {
 }
 
 /* ---------- Router ---------- */
-const collections = () => ({ proyectos: DATA.projects, writeups: DATA.writeups, notas: DATA.notes });
+const collections = () => ({ proyectos: DATA.projects, writeups: DATA.writeups});
 
 // keepPosition = true al cambiar de idioma (no salta al tope ni roba el foco)
 function route(keepPosition = false) {
@@ -488,7 +479,6 @@ const index = () => [
   ...PAGE_PATHS.map((p) => ({ label: t("nav." + p), kind: t("kind.page"), href: `#/${p}` })),
   ...DATA.projects.map((p) => ({ label: p.title, kind: t("kind.project"), href: `#/proyectos/${p.slug}`, extra: p.tags.join(" ") })),
   ...DATA.writeups.map((w) => ({ label: w.title, kind: t("kind.writeup"), href: `#/writeups/${w.slug}`, extra: w.tags.join(" ") })),
-  ...DATA.notes.map((n) => ({ label: n.title, kind: t("kind.note"), href: `#/notas/${n.slug}`, extra: n.tags.join(" ") })),
 ];
 
 function renderPalette() {
