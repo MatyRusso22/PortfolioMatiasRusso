@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matías Russo — Ciberseguridad y Desarrollo</title>
+  <meta name="description" content="Portfolio de Matías Russo: ciberseguridad, pentesting web, desarrollo fullstack e infraestructura de redes.">
+  <meta name="theme-color" content="#0a0c0b">
+  <meta property="og:title" content="Matías Russo — Ciberseguridad y Desarrollo">
+  <meta property="og:description" content="Ciberseguridad, pentesting web y desarrollo fullstack.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#view" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="topbar">
+    <button class="icon-btn menu-btn" id="menuBtn" data-i18n-aria="openMenu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <a class="brand" href="#/inicio">
+      <span class="avatar">M</span>
+      <span class="brand-text"><strong>Matías Russo</strong><span class="status"><i></i> <span data-i18n="available">disponible</span></span></span>
+    </a>
+    <nav class="nav" id="nav" data-i18n-aria="mainNav" aria-label="Principal"></nav>
+    <button class="palette-trigger" id="paletteBtn" data-i18n-aria="openSearch" aria-label="Abrir buscador">
+      <span>⌕ <span data-i18n="goto">Ir a…</span></span><kbd>Ctrl K</kbd>
+    </button>
+    <button class="lang-btn" id="langBtn" type="button" aria-label="Switch to English" title="Switch to English">
+      <span data-l="es" class="on">ES</span><span data-l="en">EN</span>
+    </button>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Matías Russo · <span data-i18n="made">Hecho a mano con HTML, CSS y JS</span></span>
+    <span class="mono">$ whoami → <span class="accent">pentester + dev</span></span>
+  </footer>
+
+  <div class="palette" id="palette" hidden>
+    <div class="palette-box" role="dialog" aria-modal="true" data-i18n-aria="search" aria-label="Buscador">
+      <input id="paletteInput" type="text" data-i18n-ph="placeholder" placeholder="Buscar páginas, writeups, proyectos…" autocomplete="off">
+      <ul id="paletteList"></ul>
+      <div class="palette-hint mono" data-i18n="hint">↑↓ navegar · Enter abrir · Esc cerrar</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
