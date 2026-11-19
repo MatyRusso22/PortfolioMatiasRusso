@@ -189,7 +189,3 @@ a.card:hover { border-color: rgba(57,229,140,.45); transform: translateY(-2px); 
 .lang-btn:hover { border-color: #2d3a34; color: var(--text); }
 .lang-btn span { padding: 4px 8px; border-radius: 6px; transition: .15s; }
 .lang-btn span.on { background: var(--accent-dim); color: var(--accent); }
-
-[data-copy] { cursor: copy; }
-.card.copied { border-color: rgba(57,229,140,.6); }
-.card.copied p { color: var(--accent); }

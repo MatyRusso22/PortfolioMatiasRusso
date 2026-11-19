@@ -237,7 +237,6 @@ const STR = {
       eyebrow: "Contacto", h1: "Hablemos",
       lead: "Estoy disponible para proyectos de pentesting, revisiones de seguridad y desarrollo.",
       email: "Email", phone: "Teléfono", location: "Ubicación", cvTitle: "Currículum", cvText: "Descargar CV en español o en inglés",
-      copied: "¡Copiado al portapapeles!"
     },
     detail: { back: "← volver", notFound: "No encontrado", notFoundText: "Esa página no existe.", repo: "Ver repositorio ↗" },
     e404: { text: "No encontré esa página.", back: "Volver al inicio" },
@@ -271,7 +270,6 @@ const STR = {
       eyebrow: "Contact", h1: "Let's talk",
       lead: "I'm available for pentesting projects, security reviews and development.",
       email: "Email", phone: "Phone", location: "Location", cvTitle: "Résumé", cvText: "Download my résumé in Spanish or English",
-      copied: "Copied to the clipboard!"
     },
     detail: { back: "← back", notFound: "Not found", notFoundText: "That page doesn't exist.", repo: "View repository ↗" },
     e404: { text: "I couldn't find that page.", back: "Back to home" },
@@ -385,8 +383,8 @@ ${DATA.skills.map((s) => `${s.k}: ${s.v.join(", ")}`).map(esc).join("\n")}
       <div class="eyebrow">${esc(t("contact.eyebrow"))}</div><h1>${esc(t("contact.h1"))}</h1>
       <p class="lead">${esc(t("contact.lead"))}</p>
       <div class="grid">
-        <a class="card" href="mailto:${esc(DATA.email)}" data-copy="${esc(DATA.email)}"><h3>${esc(t("contact.email"))}</h3><p aria-live="polite">${esc(DATA.email)}</p></a>
-        <a class="card" href="tel:${esc(DATA.phoneHref)}" data-copy="${esc(DATA.phone)}"><h3>${esc(t("contact.phone"))}</h3><p aria-live="polite">${esc(DATA.phone)}</p></a>
+        <a class="card" href="mailto:${esc(DATA.email)}"><h3>${esc(t("contact.email"))}</h3><p>${esc(DATA.email)}</p></a>
+        <a class="card" href="tel:${esc(DATA.phoneHref)}"><h3>${esc(t("contact.phone"))}</h3><p>${esc(DATA.phone)}</p></a>
         <div class="card"><h3>${esc(t("contact.location"))}</h3><p>${esc(DATA.location)}</p></div>
         ${L.github ? `<a class="card" href="${esc(L.github)}" target="_blank" rel="noopener"><h3>GitHub</h3><p>${esc(L.github)}</p></a>` : ""}
         ${L.linkedin ? `<a class="card" href="${esc(L.linkedin)}" target="_blank" rel="noopener"><h3>LinkedIn</h3><p>${esc(L.linkedin)}</p></a>` : ""}
@@ -457,34 +455,6 @@ view.addEventListener("click", (e) => {
   document.querySelectorAll("#wgrid .card").forEach((c) => {
     c.style.display = !f || c.dataset.tags.split("|").includes(f) ? "" : "none";
   });
-});
-
-/* Copiar email / teléfono al portapapeles (delegación) */
-view.addEventListener("click", async (e) => {
-  const card = e.target.closest("[data-copy]");
-  if (!card) return;
-  e.preventDefault();
-  const text = card.dataset.copy;
-  try {
-    await navigator.clipboard.writeText(text);
-  } catch {
-    const ta = document.createElement("textarea");   // fallback para navegadores viejos
-    ta.value = text;
-    ta.style.cssText = "position:fixed;opacity:0";
-    document.body.appendChild(ta);
-    ta.select();
-    try { document.execCommand("copy"); } finally { ta.remove(); }
-  }
-  const p = card.querySelector("p");
-  if (!p.dataset.orig) p.dataset.orig = p.textContent;
-  p.textContent = t("contact.copied");
-  card.classList.add("copied");
-  clearTimeout(card._t);
-  card._t = setTimeout(() => {
-    p.textContent = p.dataset.orig;
-    delete p.dataset.orig;
-    card.classList.remove("copied");
-  }, 1500);
 });
 
 /* ---------- Navegación y textos estáticos ---------- */
