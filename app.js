@@ -55,6 +55,18 @@ const DATA_ES = {
         "Este es mi practica supervisada.",
         "Como investigador en ciberseguridad, representando al laboratorio GIC, lideré un proyecto de pentest para mi universidad."
       ]
+    },
+    {
+      slug:"job-bot",
+      title: "Job Application Bot",
+      desc: "Automatiza el aplicar a trabajos.",
+      tags: ["Python", "HTML"],
+      url: "https://github.com/MatyRusso22/job-application-bot",
+      body: [
+        "Proyecto personal que cree para facilitarme el aplicar a muchos trabajos.",
+        "Este bot primero toma el CV que le des de contexto, luego va a distintos portales de empleo (LinkedIn, Glassdoor, Computrabajo, etc) y segun los tags que le des como contexto, solo aplica a los trabajos que desees (ej: si tu curriculum es puramente de desarrollador, aplica solo a trabajos de developer)",
+        "Tambien es capaz de perfilar el cv segun el trabajo a aplicar, para hacerlo mas atractivo para los recuiters."
+      ]
     }
   ],
   writeups: [                                              // EDITAR
@@ -137,6 +149,18 @@ const DATA_EN = {
       body: [
         "This project is part of my supervised professional practice.",
         "As a cybersecurity researcher representing the GIC laboratory, I led a penetration testing project targeting my university's web applications."
+      ]
+    },
+    {
+      slug:"job-bot",
+      title: "Job Application Bot",
+      desc: "Automates job applications.",
+      tags: ["Python", "HTML"],
+      url: "https://github.com/MatyRusso22/job-application-bot",
+      body: [
+        "A personal project I created to make applying to multiple jobs easier.",
+        "This bot first uses the CV you provide as context, then visits different job platforms (LinkedIn, Glassdoor, Computrabajo, etc.). Based on the tags you provide as context, it only applies to the jobs you're interested in (e.g., if your resume is focused entirely on software development, it only applies to developer positions).",
+        "It can also tailor your CV to each job application, making it more appealing to recruiters."
       ]
     }
   ],
