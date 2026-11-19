@@ -222,7 +222,7 @@ const STR = {
     kind: { page: "página", project: "proyecto", writeup: "writeup", note: "nota" },
     noResults: "Sin resultados",
     home: {
-      hi: "Hola, soy", hl: "Rompo cosas", tail: " para que se puedan arreglar.",
+      hi: "Hola, soy", hl: "Ingeniero en Sistemas de Información",
       projects: "Ver proyectos →", writeups: "Leer writeups", cv: "Ver CV", contact: "Contacto",
       latest: "Últimos writeups", none: "Todavía no hay writeups.", featured: "Proyectos destacados",
     },
@@ -255,7 +255,7 @@ const STR = {
     kind: { page: "page", project: "project", writeup: "writeup", note: "note" },
     noResults: "No results",
     home: {
-      hi: "Hi, I'm", hl: "I break things", tail: " so they can be fixed.",
+      hi: "Hi, I'm", hl: "Systems Engineer",
       projects: "View projects →", writeups: "Read writeups", cv: "View résumé", contact: "Contact",
       latest: "Latest writeups", none: "No writeups yet.", featured: "Featured projects",
     },
@@ -304,7 +304,7 @@ const views = {
     return `
       <section class="hero">
         <div class="eyebrow">${esc(DATA.headline)}</div>
-        <h1>${esc(t("home.hi"))} ${esc(DATA.name)}.<br><span class="accent">${esc(t("home.hl"))}</span>${esc(t("home.tail"))}</h1>
+        <h1>${esc(t("home.hi"))} ${esc(DATA.name)}.<br><span class="accent">${esc(t("home.hl"))}</span></h1>
         <p class="lead">${esc(DATA.intro)}</p>
         <div class="cta">
           <a class="btn primary" href="#/proyectos">${esc(t("home.projects"))}</a>
