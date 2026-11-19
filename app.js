@@ -17,7 +17,7 @@ const DATA_ES = {
   phone: "+54 221 3190689",
   phoneHref: "+542213190689",
   location: "Buenos Aires, Argentina",
-  cv: { es: "cv/CV_Russo_Matias_ES.pdf", en: "cv/CV_Russo_Matias_EN.pdf" },
+  cv: { es: "cv/CV_Russo_Matias_Ruben_ES.pdf", en: "cv/CV_Russo_Matias_Ruben_EN.pdf" },
   links: {
     github: "https://github.com/MatyRusso22",
     linkedin: "https://www.linkedin.com/in/matias-russo22/",
