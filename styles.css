@@ -75,6 +75,8 @@ kbd { font-family: var(--mono); font-size: .7rem; border: 1px solid var(--line);
 /* Layout */
 main { max-width: var(--maxw); margin: 0 auto; padding: 56px 24px 80px; outline: none; animation: fade .35s ease; }
 @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+main:focus,
+main:focus-visible {outline: none;}
 
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.1; margin: 0 0 16px; letter-spacing: -.02em; }
 h2 { font-size: 1.5rem; margin: 48px 0 16px; letter-spacing: -.01em; }
